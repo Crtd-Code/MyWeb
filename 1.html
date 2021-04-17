@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>用户注册</title>
+</head>
+<body>
+    <h1>用户注册</h1>
+    <form action="#" method="post" onsubmit="return check();" name="myform">
+        <p>
+            <label for="username">姓名：</label>
+            <input type="text" name="username" id="username" />
+            *
+        </p>
+        <p>
+            <label for="pwd">密码：</label>
+            <input type="password" name="pwd" id="pwd" />
+            *
+        </p>
+        <p>
+            <label for="repwd">确认密码：</label>
+            <input type="password" name="repwd" id="repwd" />
+            *
+        </p>
+        <p>
+            <label>性别：</label>
+            <label><input type="radio" name="sex" />男</label>
+            <label><input type="radio" name="sex" />女</label>
+        </p>
+        <p>
+            <label for="email">邮箱：</label>
+            <input type="email" name="email" id="email" />
+            *
+        </p>
+        <p>
+            <label for="idtype">身份：</label>
+            <select name="idtype" id="idtype">
+                <option value="student">学生</option>
+                <option value="teacher">老师</option>
+            </select>
+        </p>
+        <p>
+            <label for="intro">介绍</label>
+            <textarea name="intor" id="intro" cols="30" rows="10"></textarea>
+        </p>
+        <p>
+            <input type="submit" value="注册">
+            <input type="reset" value="重填">
+        </p>
+    </form>
+    <script>
+        function check(){
+            var isCommit=true;
+            var username=myform.username.value;
+            var pwd=myform.pwd.value;
+            var repwd=myform.repwd.value;
+            var email=myform.email.value;
+
+            if(username.length==0||pwd.length==0||repwd.length==0||email.length==0){
+                alert("带星号的字段必须填写");
+                isCommit=false;
+            }
+
+            if(username.length<=3||username.length>=12){
+                alert("用户名长度必须大于3个字符，小于12个字符");
+                isCommit=false;
+            }
+
+            var arr1="*#$&";
+            for(var i=0;i<username.length;i++){
+                if(arr1.indexOf(username[i])>=0){
+                    alert("用户名不能包含*#$&");
+                    isCommit=false;
+                }
+            }
+
+            //密码必须包含字母和数字，并且密码和确认密码必须一致
+            if(pwd!=repwd){
+                alert("密码和确认密码必须相同");
+                isCommit=false;
+            }else{  
+                var reg=/^(?![^a-zA-Z]+$)(?!\D+$)/
+                var flag=reg.test(pwd);
+                if(!flag){
+                    alert("密码必须包含字母和数字");
+                    isCommit=false;
+                }
+            }
+
+            // 邮箱格式要求正确，且必须是163邮箱
+            var reg=/^([a-zA-Z]|[0-9])(\w|\-)+@163.com$/
+            var flag=reg.test(email);
+            if(!flag){
+                alert("邮箱格式错误，必须为163邮箱");
+                isCommit=false;
+            }
+            return isCommit;
+        }
+    </script>
+</body>
+</html>

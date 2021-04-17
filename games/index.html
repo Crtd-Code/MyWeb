@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>game</title>
+	
+	<meta name="Keywords" content="Phaser，Phaser小站，HTML5，游戏，HTML5游戏，游戏引擎，游戏框架，HTML5游戏引擎，HTML5游戏框架">
+	<meta name="Description" content="Phaser小站是一个为phaser而生的网站，以宣传和发展Phaser为使命。本站提供一切关于Phaser的案例、源码、教程、教学视频。">
+	<link href="./index_files/global.css" rel="stylesheet">
+	<link href="./index_files/common.css" rel="stylesheet">
+	<link href="./index_files/show.css" rel="stylesheet">
+	<script src="./index_files/hm.js.下载"></script><script src="./index_files/jquery.js.下载"></script>
+	<script src="./index_files/handleLogin.js.下载"></script>
+	<script>
+var _hmt = _hmt || [];
+(function() {
+	var hm = document.createElement("script");
+	hm.src = "https://hm.baidu.com/hm.js?91013c4047363a401bde594c825b38d1";
+	var s = document.getElementsByTagName("script")[0];
+	s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<style></style></head>
+<body style="">
+	<div class="middleDiv">
+		<ul class="tab">
+			<li class="tabItem active" data-type="2">Phaser2</li>
+			<li class="tabItem " data-type="3">Phaser3</li>
+		</ul>
+		<ul class="shows" id="shows">
+						<li data-url="./game/learn/exam8.html">
+				<div class="front">
+					<img src="./index_files/show1.jpg">
+				</div>
+				<div class="back">
+					<div class="name">Phaser官方入门案例</div>
+					<div class="author">作者：Phaser官方</div>
+					<div class="desc">简介：Phaser官方的入门案例，使用到了Phaser中的很多常用的功能，值得好好研究！</div>
+					<div class="play">玩法：使用方向键控制小人，收集星星</div>
+				</div>
+			</li>
+						<li data-url="./game/flappybird/">
+				<div class="front">
+					<img src="./index_files/show2.jpg">
+				</div>
+				<div class="back">
+					<div class="name">Flappybird</div>
+					<div class="author">作者：来自网络</div>
+					<div class="desc">简介：Phaser实现的flappybird经典游戏！</div>
+					<div class="play">玩法：鼠标或手指点击屏幕，控制小鸟往前飞，加油233</div>
+				</div>
+			</li>
+						<li data-url="./game/plane/">
+				<div class="front">
+					<img src="./index_files/show3.jpg">
+				</div>
+				<div class="back">
+					<div class="name">打飞机</div>
+					<div class="author">作者：channingbreeze</div>
+					<div class="desc">简介：Phaser实现的简版打飞机小游戏，可以在手机上玩哦！</div>
+					<div class="play">玩法：鼠标或手指拖动飞机移动，还可以接子弹666</div>
+				</div>
+			</li>
+						<li data-url="./game/?game=weiduan&amp;id=1">
+				<div class="front">
+					<img src="./index_files/show4.jpg">
+				</div>
+				<div class="back">
+					<div class="name">高仿微信对话</div>
+					<div class="author">作者：channingbreeze</div>
+					<div class="desc">简介：高仿微信的功能，get这个技能，你就能做很多事情！</div>
+					<div class="play">玩法：打开看，然后，笑就行了233</div>
+				</div>
+			</li>
+						<li data-url="./game/fruit">
+				<div class="front">
+					<img src="./index_files/show5.jpg">
+				</div>
+				<div class="back">
+					<div class="name">水果忍者</div>
+					<div class="author">作者：channingbreeze</div>
+					<div class="desc">简介：实现水果忍者的基本功能，可扩展！</div>
+					<div class="play">玩法：用鼠标切水果，别漏了，也别切到炸弹</div>
+				</div>
+			</li>
+						<li data-url="./game/2048">
+				<div class="front">
+					<img src="./index_files/show6.jpg">
+				</div>
+				<div class="back">
+					<div class="name">2048</div>
+					<div class="author">作者：channingbreeze</div>
+					<div class="desc">简介：2048标准版，可扩展</div>
+					<div class="play">玩法：可用鼠标滑动，也可用方向键</div>
+				</div>
+			</li>
+						<li data-url="./game/candy">
+				<div class="front">
+					<img src="./index_files/show7.jpg">
+				</div>
+				<div class="back">
+					<div class="name">怪物要糖果</div>
+					<div class="author">作者：老外</div>
+					<div class="desc">简介：来自老外的一个小demo</div>
+					<div class="play">玩法：鼠标点击糖果，不要点中炸弹哦！</div>
+				</div>
+			</li>
+						<li data-url="./game/stardog">
+				<div class="front">
+					<img src="./index_files/show8.jpg">
+				</div>
+				<div class="back">
+					<div class="name">星星狗</div>
+					<div class="author">作者：han</div>
+					<div class="desc">简介：网友han提供的加强版接星星游戏</div>
+					<div class="play">玩法：不要碰到狗狗，吃医药包可以暴走哦！</div>
+				</div>
+			</li>
+						<li data-url="./game/run">
+				<div class="front">
+					<img src="./index_files/show9.jpg">
+				</div>
+				<div class="back">
+					<div class="name">跑男</div>
+					<div class="author">作者：freeMan</div>
+					<div class="desc">简介：网友freeMan提供的跑男小游戏</div>
+					<div class="play">玩法：鼠标点击左右侧可以切换跑道，点击上侧可以跳起来！60秒钟，看谁分最高！</div>
+				</div>
+			</li>
+						<li data-url="./game/blockdown">
+				<div class="front">
+					<img src="./index_files/show10.jpg">
+				</div>
+				<div class="back">
+					<div class="name">掉块儿</div>
+					<div class="author">作者：HaiboLee</div>
+					<div class="desc">简介：网友HaiboLee提供的掉块儿小游戏</div>
+					<div class="play">玩法：左右键控制左右，向上键可以试试，不要让方块掉出平台。</div>
+				</div>
+			</li>
+						<li data-url="./game/breaklovers">
+				<div class="front">
+					<img src="./index_files/show11.jpg">
+				</div>
+				<div class="back">
+					<div class="name">拆散小情侣</div>
+					<div class="author">作者：mcdyzg</div>
+					<div class="desc">简介：网友mcdyzg提供，适合在情人节玩</div>
+					<div class="play">玩法：疯狂点击，让小情侣变成单身狗。</div>
+				</div>
+			</li>
+						<li data-url="./game/puzzle">
+				<div class="front">
+					<img src="./index_files/show12.jpg">
+				</div>
+				<div class="back">
+					<div class="name">拼图</div>
+					<div class="author">作者：mcdyzg</div>
+					<div class="desc">简介：网友mcdyzg提供，可以用在微信运营</div>
+					<div class="play">玩法：拖拽图片交换，15秒内，完成拼图。</div>
+				</div>
+			</li>
+						<li data-url="./game/hitball">
+				<div class="front">
+					<img src="./index_files/show13.jpg">
+				</div>
+				<div class="back">
+					<div class="name">弹珠儿</div>
+					<div class="author">作者：han</div>
+					<div class="desc">简介：网友han提供，很有意思的游戏</div>
+					<div class="play">玩法：点击屏幕，去碰黄色的小球。</div>
+				</div>
+			</li>
+						<li data-url="./game/quitsmoke">
+				<div class="front">
+					<img src="./index_files/show14.jpg">
+				</div>
+				<div class="back">
+					<div class="name">别抽烟</div>
+					<div class="author">作者：hexcola</div>
+					<div class="desc">简介：网友hexcola提供，戒烟公益游戏</div>
+					<div class="play">玩法：移动鼠标，别让球球掉下去。</div>
+				</div>
+			</li>
+						<li data-url="./game/circlepath">
+				<div class="front">
+					<img src="./index_files/show15.jpg">
+				</div>
+				<div class="back">
+					<div class="name">往上爬</div>
+					<div class="author">作者：老外</div>
+					<div class="desc">简介：网友ladeng666博客</div>
+					<div class="play">玩法：顺着路径往上爬。</div>
+				</div>
+			</li>
+						<li data-url="./game/downfloor">
+				<div class="front">
+					<img src="./index_files/show16.jpg">
+				</div>
+				<div class="back">
+					<div class="name">下楼</div>
+					<div class="author">作者：老外</div>
+					<div class="desc">简介：从老外网站扒来的</div>
+					<div class="play">玩法：找个位置放小人，不要碰到左右边。</div>
+				</div>
+			</li>
+						<li data-url="./game/rpgdemo">
+				<div class="front">
+					<img src="./index_files/show17.jpg">
+				</div>
+				<div class="back">
+					<div class="name">RPG小游戏</div>
+					<div class="author">作者：Aleaf</div>
+					<div class="desc">简介：张有忌成长之路</div>
+					<div class="play">玩法：和村长谈话领取打狼人任务，打完狼人，会村长谈话得到铁剑，再跟愤青谈话，得到打牛怪任务，打完后他给你倚天剑，Over。</div>
+				</div>
+			</li>
+						<li data-url="./game/kupao">
+				<div class="front">
+					<img src="./index_files/show18.jpg">
+				</div>
+				<div class="back">
+					<div class="name">酷跑</div>
+					<div class="author">作者：coer</div>
+					<div class="desc">简介：蜘蛛侠上下跳</div>
+					<div class="play">玩法：点击屏幕，上下跳，别被淘汰。</div>
+				</div>
+			</li>
+						<li data-url="./game/kite">
+				<div class="front">
+					<img src="./index_files/show19.jpg">
+				</div>
+				<div class="back">
+					<div class="name">风筝</div>
+					<div class="author">作者：coer</div>
+					<div class="desc">简介：卡通的风筝游戏</div>
+					<div class="play">玩法：拖动风筝，别挂到树叶上。</div>
+				</div>
+			</li>
+						<li data-url="./game/nail">
+				<div class="front">
+					<img src="./index_files/show20.jpg">
+				</div>
+				<div class="back">
+					<div class="name">别碰钉子</div>
+					<div class="author">作者：coer</div>
+					<div class="desc">简介：小鸟别碰钉子</div>
+					<div class="play">玩法：点击控制小鸟，别碰钉子。</div>
+				</div>
+			</li>
+						<li data-url="./game/fubag">
+				<div class="front">
+					<img src="./index_files/show21.jpg">
+				</div>
+				<div class="back">
+					<div class="name">接福袋</div>
+					<div class="author">作者：coer</div>
+					<div class="desc">简介：新春送福</div>
+					<div class="play">玩法：鼠标控制小人，接福袋。</div>
+				</div>
+			</li>
+						<li data-url="./game/bike">
+				<div class="front">
+					<img src="./index_files/show22.jpg">
+				</div>
+				<div class="back">
+					<div class="name">单车骑行</div>
+					<div class="author">作者：coer</div>
+					<div class="desc">简介：骑自行车小游戏</div>
+					<div class="play">玩法：点击屏幕就是跳，可以二连跳。</div>
+				</div>
+			</li>
+						<li data-url="./game/fctank">
+				<div class="front">
+					<img src="./index_files/show23.jpg">
+				</div>
+				<div class="back">
+					<div class="name">FC坦克大战</div>
+					<div class="author">作者：channingbreeze</div>
+					<div class="desc">简介：仿FC坦克大战</div>
+					<div class="play">玩法：玩家1，上下左右，空格；玩家2，WSAD，J。</div>
+				</div>
+			</li>
+						<li data-url="./game/tank">
+				<div class="front">
+					<img src="./index_files/show24.jpg">
+				</div>
+				<div class="back">
+					<div class="name">坦克大战</div>
+					<div class="author">作者：Aleaf</div>
+					<div class="desc">简介：坦克大战</div>
+					<div class="play">玩法：上下左右，空格，去消灭坦克吧。</div>
+				</div>
+			</li>
+						<li data-url="./game/getcockscomb">
+				<div class="front">
+					<img src="./index_files/show25.jpg">
+				</div>
+				<div class="back">
+					<div class="name">接鸡冠</div>
+					<div class="author">作者：codingbat</div>
+					<div class="desc">简介：小海豹接鸡冠</div>
+					<div class="play">玩法：鼠标移动小海豹，接住鸡冠，躲开炸弹。</div>
+				</div>
+			</li>
+						<li data-url="./game/marathon">
+				<div class="front">
+					<img src="./index_files/show26.jpg">
+				</div>
+				<div class="back">
+					<div class="name">社区跑</div>
+					<div class="author">作者：MicroJes</div>
+					<div class="desc">简介：一只萌恐恐在跑步</div>
+					<div class="play">玩法：看着它跑，捡箱子，然后就到终点了。</div>
+				</div>
+			</li>
+						<li data-url="./game/collectstar">
+				<div class="front">
+					<img src="./index_files/show27.jpg">
+				</div>
+				<div class="back">
+					<div class="name">接星星</div>
+					<div class="author">作者：MngYou</div>
+					<div class="desc">简介：官方案例升级版</div>
+					<div class="play">玩法：碰到小狗掉血，捡到血包急加血，接完所有星星，再接钻石过关。</div>
+				</div>
+			</li>
+						<li data-url="./game/donottapwhitetile">
+				<div class="front">
+					<img src="./index_files/show28.jpg">
+				</div>
+				<div class="back">
+					<div class="name">别踩白块儿</div>
+					<div class="author">作者：MngYou</div>
+					<div class="desc">简介：别踩白块儿</div>
+					<div class="play">玩法：小心不要点到白块儿，把黑块儿变绿。</div>
+				</div>
+			</li>
+						<li data-url="./game/dragandmatch">
+				<div class="front">
+					<img src="./index_files/show29.jpg">
+				</div>
+				<div class="back">
+					<div class="name">拖一拖</div>
+					<div class="author">作者：来自Phaser社区</div>
+					<div class="desc">简介：拖动彩色方块</div>
+					<div class="play">玩法：横竖拖动彩色方块，让横或数三个及以上相同颜色连在一起即可消除。</div>
+				</div>
+			</li>
+						<li data-url="./game/fifty">
+				<div class="front">
+					<img src="./index_files/show30.jpg">
+				</div>
+				<div class="back">
+					<div class="name">看谁能坚持50秒</div>
+					<div class="author">作者：MngYou</div>
+					<div class="desc">简介：反应力游戏</div>
+					<div class="play">玩法：拖动红色方块，不要碰到蓝色方块和边界。</div>
+				</div>
+			</li>
+						<li data-url="./game/findpath">
+				<div class="front">
+					<img src="./index_files/show31.jpg">
+				</div>
+				<div class="back">
+					<div class="name">自动寻路Demo</div>
+					<div class="author">作者：Aleaf</div>
+					<div class="desc">简介：实现自动寻路</div>
+					<div class="play">玩法：鼠标点击地图，小人会自己走过去。</div>
+				</div>
+			</li>
+						<li data-url="./game/hearthstone">
+				<div class="front">
+					<img src="./index_files/show32.jpg">
+				</div>
+				<div class="back">
+					<div class="name">炉石传说</div>
+					<div class="author">作者：SangLiang</div>
+					<div class="desc">简介：炉石传说Phaser版</div>
+					<div class="play">玩法：会玩炉石传说吗？不会玩百度下</div>
+				</div>
+			</li>
+						<li data-url="./game/ballgame">
+				<div class="front">
+					<img src="./index_files/show33.jpg">
+				</div>
+				<div class="back">
+					<div class="name">撞球</div>
+					<div class="author">作者：咸蛋变超人</div>
+					<div class="desc">简介：超简易撞球游戏</div>
+					<div class="play">玩法：不要让黄球到自己这边</div>
+				</div>
+			</li>
+						<li data-url="./game/shoot">
+				<div class="front">
+					<img src="./index_files/show34.jpg">
+				</div>
+				<div class="back">
+					<div class="name">射击大战</div>
+					<div class="author">作者：admin</div>
+					<div class="desc">简介：简单的射击游戏</div>
+					<div class="play">玩法：点击鼠标射击，不要让敌机碰到你，还可以按空格键，表示炸弹</div>
+				</div>
+			</li>
+						<li data-url="./game/susliks">
+				<div class="front">
+					<img src="./index_files/show35.jpg">
+				</div>
+				<div class="back">
+					<div class="name">打地鼠</div>
+					<div class="author">作者：admin</div>
+					<div class="desc">简介：打地鼠游戏</div>
+					<div class="play">玩法：疯狂点击地鼠，看看30秒内你能打多少个</div>
+				</div>
+			</li>
+						<li data-url="./game/pixelstar">
+				<div class="front">
+					<img src="./index_files/show36.jpg">
+				</div>
+				<div class="back">
+					<div class="name">像素接星星</div>
+					<div class="author">作者：MngYou</div>
+					<div class="desc">简介：纯像素化的游戏</div>
+					<div class="play">玩法：本游戏没有任何图片资源，接所有星星，不要碰到狗和地刺，3条命</div>
+				</div>
+			</li>
+						<li data-url="./game/memory">
+				<div class="front">
+					<img src="./index_files/show37.jpg">
+				</div>
+				<div class="back">
+					<div class="name">记忆翻牌游戏</div>
+					<div class="author">作者：MngYou</div>
+					<div class="desc">简介：考验记忆的小游戏</div>
+					<div class="play">玩法：翻牌，两两配对，30秒内你能完成吗？</div>
+				</div>
+			</li>
+						<li data-url="./game/tacit">
+				<div class="front">
+					<img src="./index_files/show38.jpg">
+				</div>
+				<div class="back">
+					<div class="name">默契</div>
+					<div class="author">作者：2017 CiGJ 2DXX团队</div>
+					<div class="desc">简介：考验默契的双人小游戏</div>
+					<div class="play">玩法：双人，一人一边，按照顺序点击按钮。PC可用QAZ和OKM键控制。</div>
+				</div>
+			</li>
+						<li data-url="./game/blindmoon">
+				<div class="front">
+					<img src="./index_files/show39.jpg">
+				</div>
+				<div class="back">
+					<div class="name">盲月AVG</div>
+					<div class="author">作者：随我变</div>
+					<div class="desc">简介：AVG游戏引擎</div>
+					<div class="play">玩法：按照剧情模式走吧！</div>
+				</div>
+			</li>
+						<li data-url="./game/dinosaur">
+				<div class="front">
+					<img src="./index_files/show40.jpg">
+				</div>
+				<div class="back">
+					<div class="name">恐龙</div>
+					<div class="author">作者：来自Phaser Editor</div>
+					<div class="desc">简介：Phaser Editor官方案例</div>
+					<div class="play">玩法：键盘控制恐龙接果实</div>
+				</div>
+			</li>
+						<li data-url="./game/simplechess">
+				<div class="front">
+					<img src="./index_files/show41.jpg">
+				</div>
+				<div class="back">
+					<div class="name">简易下棋游戏</div>
+					<div class="author">作者：来自网络</div>
+					<div class="desc">简介：简单的下棋游戏</div>
+					<div class="play">玩法：掷骰子就行了</div>
+				</div>
+			</li>
+						<li data-url="./game/pacman">
+				<div class="front">
+					<img src="./index_files/show42.jpg">
+				</div>
+				<div class="back">
+					<div class="name">吃豆子</div>
+					<div class="author">作者：LuisQuin</div>
+					<div class="desc">简介：小时候玩的吃豆子</div>
+					<div class="play">玩法：方向键控制小人吃完所有豆子</div>
+				</div>
+			</li>
+						<li data-url="./game/randomdungeon">
+				<div class="front">
+					<img src="./index_files/show43.jpg">
+				</div>
+				<div class="back">
+					<div class="name">随机生成地图示例</div>
+					<div class="author">作者：LuisQuin</div>
+					<div class="desc">简介：一个随机生成地图算法</div>
+					<div class="play">玩法：方向键控制小方块移动</div>
+				</div>
+			</li>
+						<li data-url="./game/justshoot/dist">
+				<div class="front">
+					<img src="./index_files/show44.jpg">
+				</div>
+				<div class="back">
+					<div class="name">燕澜七缙 - 缙者为王</div>
+					<div class="author">作者：coer</div>
+					<div class="desc">简介：控制射击小游戏</div>
+					<div class="play">玩法：使用虚拟手柄控制战车射击敌人</div>
+				</div>
+			</li>
+						<li data-url="./game/magicplain">
+				<div class="front">
+					<img src="./index_files/show45.jpg">
+				</div>
+				<div class="back">
+					<div class="name">炸弹人</div>
+					<div class="author">作者：lianera</div>
+					<div class="desc">简介：好玩的炸弹人游戏</div>
+					<div class="play">玩法：方向键移动，空格键放炸弹，放炸弹炸死敌人小怪物</div>
+				</div>
+			</li>
+						<li data-url="./game/russianblock">
+				<div class="front">
+					<img src="./index_files/show46.jpg">
+				</div>
+				<div class="back">
+					<div class="name">俄罗斯方块</div>
+					<div class="author">作者：来自网络</div>
+					<div class="desc">简介：俄罗斯方块游戏</div>
+					<div class="play">玩法：方向键控制，经典俄罗斯方块</div>
+				</div>
+			</li>
+						<li data-url="./game/starship">
+				<div class="front">
+					<img src="./index_files/show47.jpg">
+				</div>
+				<div class="back">
+					<div class="name">星球飞船</div>
+					<div class="author">作者：jschomay</div>
+					<div class="desc">简介：打飞船游戏</div>
+					<div class="play">玩法：鼠标控制飞船，点击鼠标左键发射子弹</div>
+				</div>
+			</li>
+						<li data-url="./game/minorminer">
+				<div class="front">
+					<img src="./index_files/show48.jpg">
+				</div>
+				<div class="back">
+					<div class="name">小矿工</div>
+					<div class="author">作者：来自网络</div>
+					<div class="desc">简介：很好玩的关卡游戏</div>
+					<div class="play">玩法：按照游戏说明玩吧</div>
+				</div>
+			</li>
+						<li data-url="./game/shenjingmao">
+				<div class="front">
+					<img src="./index_files/show49.jpg">
+				</div>
+				<div class="back">
+					<div class="name">围住神经猫</div>
+					<div class="author">作者：xw</div>
+					<div class="desc">简介：围住神经猫phaser版</div>
+					<div class="play">玩法：点击鼠标，将神经猫围住，别让它逃出边界</div>
+				</div>
+			</li>
+						<li data-url="./game/jump">
+				<div class="front">
+					<img src="./index_files/show50.jpg">
+				</div>
+				<div class="back">
+					<div class="name">往上跳</div>
+					<div class="author">作者：咸蛋变超人</div>
+					<div class="desc">简介：有意思的休闲游戏</div>
+					<div class="play">玩法：点击屏幕，控制主角位置，一直往上跳</div>
+				</div>
+			</li>
+						<li data-url="./game/prize">
+				<div class="front">
+					<img src="./index_files/show51.jpg">
+				</div>
+				<div class="back">
+					<div class="name">抽奖</div>
+					<div class="author">作者：(待认领)</div>
+					<div class="desc">简介：抽奖核心逻辑</div>
+					<div class="play">玩法：点击屏幕，进行抽奖，看看你能抽到啥</div>
+				</div>
+			</li>
+						<li data-url="./game/eliminate">
+				<div class="front">
+					<img src="./index_files/show52.jpg">
+				</div>
+				<div class="back">
+					<div class="name">英雄消消乐</div>
+					<div class="author">作者：(待认领)</div>
+					<div class="desc">简介：消消乐新玩法</div>
+					<div class="play">玩法：让英雄捡到钥匙，再开锁出门</div>
+				</div>
+			</li>
+						<li data-url="./game/swordart">
+				<div class="front">
+					<img src="./index_files/show53.jpg">
+				</div>
+				<div class="back">
+					<div class="name">刀剑圣域</div>
+					<div class="author">作者：kobako</div>
+					<div class="desc">简介：一个RPG游戏</div>
+					<div class="play">玩法：一层一层过关就行</div>
+				</div>
+			</li>
+						<li data-url="./game/catapult">
+				<div class="front">
+					<img src="./index_files/show54.jpg">
+				</div>
+				<div class="back">
+					<div class="name">横版弹弓游戏</div>
+					<div class="author">作者：漫画_郎</div>
+					<div class="desc">简介：简易弹弓游戏</div>
+					<div class="play">玩法：控制弹弓打到树上</div>
+				</div>
+			</li>
+						<li data-url="./game/lottery">
+				<div class="front">
+					<img src="./index_files/show55.jpg">
+				</div>
+				<div class="back">
+					<div class="name">飞禽走兽彩票游戏</div>
+					<div class="author">作者：channingbreeze</div>
+					<div class="desc">简介：一种彩票</div>
+					<div class="play">玩法：1分钟开奖一次，等着就行</div>
+				</div>
+			</li>
+						<li data-url="./game/rhythm">
+				<div class="front">
+					<img src="./index_files/show56.jpg">
+				</div>
+				<div class="back">
+					<div class="name">赝品节奏大师</div>
+					<div class="author">作者：开心的小黄鳝</div>
+					<div class="desc">简介：仿节奏大师</div>
+					<div class="play">玩法：等音符掉下来就点</div>
+				</div>
+			</li>
+						<li data-url="./game/snap">
+				<div class="front">
+					<img src="./index_files/show57.jpg">
+				</div>
+				<div class="back">
+					<div class="name">汽车抓拍</div>
+					<div class="author">作者：网上扒的</div>
+					<div class="desc">简介：测试你的反应能力</div>
+					<div class="play">玩法：等汽车到方框里，就马上按拍照按钮</div>
+				</div>
+			</li>
+						<li data-url="./game/charge">
+				<div class="front">
+					<img src="./index_files/show58.jpg">
+				</div>
+				<div class="back">
+					<div class="name">不充不行</div>
+					<div class="author">作者：网上扒的</div>
+					<div class="desc">简介：不停地充电</div>
+					<div class="play">玩法：长按充电桩，不停地给3个汽车充电，看看你能坚持多久</div>
+				</div>
+			</li>
+						<li data-url="./game/runrobot">
+				<div class="front">
+					<img src="./index_files/show59.jpg">
+				</div>
+				<div class="back">
+					<div class="name">机器人向前冲</div>
+					<div class="author">作者：来自github</div>
+					<div class="desc">简介：休闲游戏</div>
+					<div class="play">玩法：机器人会一直跑，点击屏幕让它跳跃</div>
+				</div>
+			</li>
+						<li data-url="./game/allalive">
+				<div class="front">
+					<img src="./index_files/show60.jpg">
+				</div>
+				<div class="back">
+					<div class="name">一个都不能死</div>
+					<div class="author">作者：MngYou</div>
+					<div class="desc">简介：反应力游戏</div>
+					<div class="play">玩法：点击上下两个区域，让小人跳跃穿过障碍</div>
+				</div>
+			</li>
+						<li data-url="./game/skeletonguard">
+				<div class="front">
+					<img src="./index_files/show61.jpg">
+				</div>
+				<div class="back">
+					<div class="name">骷髅防塔</div>
+					<div class="author">作者：MngYou</div>
+					<div class="desc">简介：防塔游戏</div>
+					<div class="play">玩法：弓箭克制长枪，骑士克制弓箭，长枪克制骑兵</div>
+				</div>
+			</li>
+						<li data-url="./game/wipeglass">
+				<div class="front">
+					<img src="./index_files/show62.jpg">
+				</div>
+				<div class="back">
+					<div class="name">擦玻璃</div>
+					<div class="author">作者：咸蛋变超人</div>
+					<div class="desc">简介：擦除游戏</div>
+					<div class="play">玩法：用抹布擦出一个小黄人</div>
+				</div>
+			</li>
+						<li data-url="./game/seckill/">
+				<div class="front">
+					<img src="./index_files/show63.jpg">
+				</div>
+				<div class="back">
+					<div class="name">秒杀奇侠传</div>
+					<div class="author">作者：MngYou</div>
+					<div class="desc">简介：白鹭案例复刻版</div>
+					<div class="play">玩法：等气条到红色部分就发功，不能快也不能慢</div>
+				</div>
+			</li>
+						<li data-url="./game/timberpig/">
+				<div class="front">
+					<img src="./index_files/show64.jpg">
+				</div>
+				<div class="back">
+					<div class="name">伐木猪</div>
+					<div class="author">作者：MngYou</div>
+					<div class="desc">简介：简易手速游戏</div>
+					<div class="play">玩法：在树的左右进行点击，不要被树砍到，手速要快</div>
+				</div>
+			</li>
+						<li data-url="./game/rocket/">
+				<div class="front">
+					<img src="./index_files/show65.jpg">
+				</div>
+				<div class="back">
+					<div class="name">火箭飞升</div>
+					<div class="author">作者：MngYou</div>
+					<div class="desc">简介：反应力游戏</div>
+					<div class="play">玩法：手机上玩，重力感应，左右翻转手机控制火箭</div>
+				</div>
+			</li>
+						<li data-url="./game/doudizhu/build/">
+				<div class="front">
+					<img src="./index_files/show66.jpg">
+				</div>
+				<div class="back">
+					<div class="name">尖峰斗地主</div>
+					<div class="author">作者：从天而降</div>
+					<div class="desc">简介：多人斗地主游戏</div>
+					<div class="play">玩法：去看看斗地主怎么玩吧，TT</div>
+				</div>
+			</li>
+						<li data-url="./game/jumpone">
+				<div class="front">
+					<img src="./index_files/show67.jpg">
+				</div>
+				<div class="back">
+					<div class="name">跳一跳</div>
+					<div class="author">作者：Aleaf</div>
+					<div class="desc">简介：Phaser版本跳一跳</div>
+					<div class="play">玩法：长按屏幕，再松开，跳到另一个板子上</div>
+				</div>
+			</li>
+						<li data-url="./game/maze">
+				<div class="front">
+					<img src="./index_files/show68.jpg">
+				</div>
+				<div class="back">
+					<div class="name">迷宫</div>
+					<div class="author">作者：MngYou</div>
+					<div class="desc">简介：黑马制作的迷宫游戏</div>
+					<div class="play">玩法：拿到钥匙，开门就行，注意躲避敌人</div>
+				</div>
+			</li>
+						<li data-url="./game/eatball/">
+				<div class="front">
+					<img src="./index_files/show69.jpg">
+				</div>
+				<div class="back">
+					<div class="name">大球吃小球</div>
+					<div class="author">作者：沐峰</div>
+					<div class="desc">简介：吃球游戏</div>
+					<div class="play">玩法：控制大球吃掉比自己小的球，只能在手机模式下玩</div>
+				</div>
+			</li>
+						<li data-url="./game/fruitwar">
+				<div class="front">
+					<img src="./index_files/show70.jpg">
+				</div>
+				<div class="back">
+					<div class="name">水果大战</div>
+					<div class="author">作者：一抹芳华</div>
+					<div class="desc">简介：准确度小游戏</div>
+					<div class="play">玩法：控制小人往水果上跳</div>
+				</div>
+			</li>
+						<li data-url="./game/unforgetday/">
+				<div class="front">
+					<img src="./index_files/show71.jpg">
+				</div>
+				<div class="back">
+					<div class="name">难忘的一天</div>
+					<div class="author">作者：一抹芳华</div>
+					<div class="desc">简介：拼图游戏</div>
+					<div class="play">玩法：给自己拼出难忘的一天</div>
+				</div>
+			</li>
+						<li data-url="./game/legendofwolf/">
+				<div class="front">
+					<img src="./index_files/show72.jpg">
+				</div>
+				<div class="back">
+					<div class="name">狼的传说</div>
+					<div class="author">作者：MngYou</div>
+					<div class="desc">简介：防塔游戏</div>
+					<div class="play">玩法：不要让敌人过来，可以用各种技能</div>
+				</div>
+			</li>
+						<li data-url="./game/twowar">
+				<div class="front">
+					<img src="./index_files/show73.jpg">
+				</div>
+				<div class="back">
+					<div class="name">双王争霸</div>
+					<div class="author">作者：MngYou</div>
+					<div class="desc">简介：反应力小游戏</div>
+					<div class="play">玩法：不要碰到方块，接到所有圆圈</div>
+				</div>
+			</li>
+						<li data-url="./game/p2ball">
+				<div class="front">
+					<img src="./index_files/show79.jpg">
+				</div>
+				<div class="back">
+					<div class="name">P2物理弹球</div>
+					<div class="author">作者：Aleaf</div>
+					<div class="desc">简介：仿微信小游戏最强弹球</div>
+					<div class="play">玩法：用弹球打掉方块</div>
+				</div>
+			</li>
+						<li data-url="./game/petparty">
+				<div class="front">
+					<img src="./index_files/show84.jpg">
+				</div>
+				<div class="back">
+					<div class="name">蛋蛋派</div>
+					<div class="author">作者：灯神</div>
+					<div class="desc">简介：完整的连连看游戏</div>
+					<div class="play">玩法：有很好的提示，跟着提示就学会了</div>
+				</div>
+			</li>
+					</ul>
+	</div>
+	<footer>
+  <div class="advertise">
+    <ul>
+      <li>
+        <div>
+          <a href="https://item.taobao.com/item.htm?spm=a230r.1.14.16.4021e513gTnW70&amp;id=544388852618&amp;ns=1&amp;abbucket=11#detail" target="_blank">
+            <img src="./index_files/humaomao.jpg">
+            <div class="backInfo" style="border: 2px solid #F45782;">
+              <span>推荐理由</span>：专业H5游戏开发，使用Phaser引擎，价格实惠，技术给力，态度热情，售后到位，还原度100%，是您做外包的不二之选，诚信推荐。
+            </div>
+          </a>
+        </div>
+      </li>
+      <li>
+        <a href="http://xc.hubwiz.com/course/59b1c2fcc7fd1d494539802c?affid=phaser-china" target="_blank">
+          <img src="./index_files/huizhi.jpg">
+          <div class="backInfo" style="border: 2px solid #159588;">
+            <span>推荐理由</span>：汇智网的Phaser入门教程，有着为新手设计的清晰的学习路线，每个知识点都有示例代码及效果展示，是入门phaser的不二选择，值得一看。
+          </div>
+        </a>
+      </li>
+      <li>
+        <div>
+          <img src="./index_files/advertise.jpg">
+          <div class="backInfo" style="border: 2px solid #9BCCFA;">
+            <span>合作联系</span>：QQ396417401
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="h30 clear"></div>
+  <div class="h10 topLine"></div>
+	<p>联系人：李先生&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;联系电话：13581641192&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;电子邮件：channingbreeze@163.com&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;QQ：396417401&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;微信号：xin874058</p>
+	<p>
+		友情链接：
+    <a href="http://www.mqant.com/" target="_blank">mqant-高性能实时后端游戏框架</a>&nbsp;&nbsp;&nbsp;
+    <a href="http://blog.xiiigame.com/" target="_blank">嬉戏实验室</a>&nbsp;&nbsp;&nbsp;
+    <a href="http://4399.io/" target="_blank">4399.io</a>&nbsp;&nbsp;&nbsp;
+    <a href="http://topgameshow.com/" target="_blank">淘朴游戏网</a>&nbsp;&nbsp;&nbsp;
+    <a href="http://www.calfnote.com/" target="_blank">玩命牛的成长记录</a>&nbsp;&nbsp;&nbsp;
+    <a href="http://www.webxinxin.com/" target="_blank">欣欣网站制作</a>&nbsp;&nbsp;&nbsp;
+    <a href="http://www.channingbreeze.com/" target="_blank">李欣的个人博客</a>
+	</p>
+	<p>
+		Copyright <span>©</span> 2015-2017 phaser-china.com All Rights Reserved |
+		<a href="http://www.miitbeian.gov.cn/" rel="nofollow" target="_blank">京ICP备15008048号-4</a>
+	</p>
+	<div class="h10"></div>
+</footer>	<div class="bottomFix">
+	<div class="smallLogo qq">
+		<div class="popup">
+			<div class="title">欢迎加入Phaser小站QQ讨论群</div>
+			<div class="qqNumber">群号：519413640</div>
+			<div class="qrcode qqQrcode"></div>
+		</div>
+	</div>
+	<div class="smallLogo weixin">
+		<div class="popup">
+			<div class="title">欢迎关注Phaser小站微信公众号</div>
+			<div class="qrcode weixinQrcode"></div>
+		</div>
+	</div>
+</div>	<script src="./index_files/show.js.下载"></script>
+</body></html>
